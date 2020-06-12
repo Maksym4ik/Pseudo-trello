@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//все поле дашборда
+.dashboard {
+
+  background-color: #34383f;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .hello{
+    position: absolute;
+    top: 0px;
+    color: white;
+    text-transform: uppercase;
+    .exit{
+      color: rgb(255, 141, 159);
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+//столбец для контента
+  .columnBox {
+    min-width: 330px;
+    margin: 5px;
+    .header {
+      padding: 10px;
+      height: 50px;
+      width: 100%;
+      text-align: center;
+      span {
+        color: white;
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+    }
+    .content{
+      min-height: 150px;
+
+      section:first-child{
+        border-top: 10px solid #282b31;
+      }
+      .item{
+        border: 10px solid #282b31;
+        padding: 5px;
+        border-top: none;
+        color: white;
+        height: 150px;
+        width: 100%;
+        background-color: #191a1d;
+        position: relative;
+        .delete{
+          width: 70px;
+          text-align: center;
+          border-radius: 5px;
+          position: absolute;
+          left: calc(100% - 75px);
+          top: calc(100% - 30px);
+          background-color: rgba(255, 32, 15, 0.6);
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          text-transform: uppercase;
+          &:hover{
+            background-color: rgba(184, 30, 15, 0.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,57 @@
+
+.loginContent {
+  background-color: #34383f;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .form {
+    color: white;
+    display: flex;
+    flex-flow: column;
+    width: 290px;
+    margin: 20px;
+
+    div input {
+      width: 100%;
+      outline: none;
+      height: 30px;
+      font-size: 1.2em;
+      background-color: #191a1d;
+      color: white;
+      border: none;
+    }
+
+    div p {
+      position: absolute;
+      font-style: italic;
+      color: #ff8b89;
+      font-size: 0.8em;
+    }
+
+    label {
+      text-transform: uppercase;
+      margin: 0;
+      margin-top: 20px;
+      padding: 0;
+
+    }
+
+    button {
+      text-transform: uppercase;
+      font-size: 1.2em;
+      color: white;
+      margin-top: 30px;
+      height: 30px;
+      background-color: #191a1d;
+      border: none;
+    }
+
+    .title {
+      font-size: 1.6em;
+    }
+  }
+}
